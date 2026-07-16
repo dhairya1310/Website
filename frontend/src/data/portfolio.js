@@ -104,6 +104,15 @@ export const PROJECTS = [
     image: "https://images.unsplash.com/photo-1689732888407-310424e3a372",
     link: "https://github.com/dhairya1310/Forecasting-Micro-and-Macro-Economic-Indicators-with-ML",
   },
+  {
+    tag: "Reinforcement Learning",
+    title: "Dynamic Asset Allocation with Deep RL",
+    desc: "A reinforcement learning system that learns to allocate a portfolio across the S&P 500, Dow Jones and Hang Seng instead of static rules. DQN, A2C and PPO were trained on 30+ years of daily market and macro data, then tested on unseen 2023–2024 conditions. The best model (A2C) grew $100K into $129,914 with a 1.88 Sharpe ratio and sub-10% drawdown — via custom Gymnasium environments and an interactive Streamlit dashboard.",
+    stack: ["Python", "PyTorch", "Stable-Baselines3", "Gymnasium", "Streamlit"],
+    metric: "1.88 Sharpe · +29.9% return",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
+    link: "https://github.com/dhairya1310/portfolio-optimization-RL",
+  },
 ];
 
 export const SKILLS = [
