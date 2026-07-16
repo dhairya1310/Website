@@ -27,9 +27,6 @@ export const Projects = () => (
                   className="h-full w-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[transform,opacity] duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
-                <span className="absolute top-4 left-4 mono-label text-[var(--teal)] bg-black/50 backdrop-blur px-3 py-1 rounded-full">
-                  {p.tag}
-                </span>
                 <span className="absolute top-4 right-4 h-9 w-9 grid place-items-center rounded-full bg-black/50 backdrop-blur text-white group-hover:bg-[var(--teal)] group-hover:text-black transition-colors duration-300">
                   <ArrowUpRight size={16} />
                 </span>
@@ -44,7 +41,6 @@ export const Projects = () => (
                     </span>
                   ))}
                 </div>
-                <p className="font-mono text-sm text-[var(--teal)]">{p.metric}</p>
               </div>
             </motion.a>
           </Reveal>
