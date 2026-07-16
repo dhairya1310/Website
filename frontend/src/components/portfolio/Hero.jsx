@@ -94,11 +94,12 @@ export const Hero = () => {
               </button>
               <a
                 href={PROFILE.resume}
-                download
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm font-mono uppercase tracking-[0.14em] text-white hover:border-[var(--teal)] hover:text-[var(--teal)] transition-colors duration-200"
                 data-testid="hero-resume-button"
               >
-                Download Resume
+                View Resume
               </a>
             </div>
             <div className="flex items-center gap-5 pt-1">

@@ -65,7 +65,8 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center gap-3">
             <a
               href={PROFILE.resume}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full border border-[var(--teal)]/40 px-5 py-2 text-xs font-mono uppercase tracking-[0.16em] text-[var(--teal)] hover:bg-[var(--teal)] hover:text-black transition-colors duration-200"
               data-testid="nav-resume-button"
             >
@@ -110,11 +111,12 @@ export const Navbar = () => {
               ))}
               <a
                 href={PROFILE.resume}
-                download
+                target="_blank"
+                rel="noreferrer"
                 className="mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-[var(--teal)] px-6 py-3 text-sm font-mono uppercase tracking-[0.16em] text-black"
                 data-testid="nav-mobile-resume"
               >
-                Download Resume <ArrowUpRight size={16} />
+                View Resume <ArrowUpRight size={16} />
               </a>
             </div>
           </motion.div>
