@@ -134,7 +134,7 @@ export const EDUCATION = [
   {
     degree: "M.S. Data Science",
     school: "Stevens Institute of Technology",
-    period: "Expected May 2026",
+    period: "May 2026",
     gpa: "GPA 3.73",
   },
   {
