@@ -93,7 +93,7 @@ export const PROJECTS = [
     stack: ["Python", "SQL", "Tableau"],
     metric: "25K+ listings · 10 dashboards",
     image: "https://images.unsplash.com/photo-1709990740117-0eb9358fbd24",
-    link: "https://public.tableau.com/app/profile/dhairya.shah",
+    link: "https://github.com/dhairya1310/Analyzing-the-Global-Luxury-Resale-Market-Data-Analysis-Visualization/blob/main/README.md",
   },
   {
     tag: "Research · Published",
@@ -102,7 +102,7 @@ export const PROJECTS = [
     stack: ["LSTM", "Python", "Time Series"],
     metric: "~95% R² · ASIT 2024",
     image: "https://images.unsplash.com/photo-1689732888407-310424e3a372",
-    link: "#",
+    link: "https://github.com/dhairya1310/Forecasting-Micro-and-Macro-Economic-Indicators-with-ML",
   },
 ];
 
