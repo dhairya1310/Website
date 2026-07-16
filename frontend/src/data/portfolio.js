@@ -113,6 +113,15 @@ export const PROJECTS = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
     link: "https://github.com/dhairya1310/portfolio-optimization-RL",
   },
+  {
+    tag: "Anomaly Detection",
+    title: "Airbnb Anomaly Detection",
+    desc: "An unsupervised ML pipeline to detect pricing and review anomalies in Airbnb listings — flagging patterns that could signal data errors, fraud, or unreliable listings. After cleaning and merging listings, calendar and review data, I applied Isolation Forest and DBSCAN to surface outlier behavior — a scalable approach for platform trust and data-quality monitoring at scale.",
+    stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
+    metric: "Isolation Forest · DBSCAN",
+    image: "https://images.unsplash.com/photo-1704244003064-6d4e55ddd733",
+    link: "https://github.com/dhairya1310/Airbnb-Anomaly-Detection",
+  },
 ];
 
 export const SKILLS = [
