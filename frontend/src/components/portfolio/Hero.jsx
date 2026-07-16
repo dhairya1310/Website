@@ -4,7 +4,7 @@ import { ArrowUpRight, MapPin, Github, Linkedin, BarChart3 } from "lucide-react"
 import { PROFILE } from "@/data/portfolio";
 
 const MaskLine = ({ children, delay = 0 }) => (
-  <span className="block overflow-hidden">
+  <span className="block overflow-hidden pb-[0.14em] -mb-[0.14em]">
     <motion.span
       className="block"
       initial={{ y: "110%" }}
@@ -52,10 +52,6 @@ export const Hero = () => {
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-4 py-1.5">
             <MapPin size={13} className="text-[var(--teal)]" />
             <span className="mono-label text-[var(--text-2)]">{PROFILE.location}</span>
-          </span>
-          <span className="inline-flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--teal)] animate-pulse teal-glow" />
-            <span className="mono-label">Open to analyst roles</span>
           </span>
         </motion.div>
 
