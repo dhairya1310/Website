@@ -52,9 +52,6 @@ export const Experience = () => {
                         <div className="pb-9 pl-[52px] md:pl-[72px] grid md:grid-cols-12 gap-6">
                           <div className="md:col-span-4">
                             <p className="mono-label text-[var(--text-3)]">{job.location}</p>
-                            <span className="inline-block mt-4 rounded-full border border-[var(--teal)]/30 bg-[var(--teal)]/[0.06] px-4 py-1.5 font-mono text-xs text-[var(--teal)]">
-                              {job.metric}
-                            </span>
                           </div>
                           <ul className="md:col-span-8 space-y-3">
                             {job.points.map((p, j) => (

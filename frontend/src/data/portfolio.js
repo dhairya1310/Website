@@ -63,7 +63,7 @@ export const EXPERIENCE = [
     role: "Data Analyst Intern",
     company: "Accenture",
     period: "Jan 2024 — Jun 2024",
-    location: "India",
+    location: "Mumbai, India",
     points: [
       "Ran category analytics and A/B experiments for a retail client.",
       "Designed KPI dashboards adopted by category managers for weekly decisions.",
@@ -75,7 +75,7 @@ export const EXPERIENCE = [
     role: "Data Analyst",
     company: "Expify",
     period: "Jun 2022 — Oct 2023",
-    location: "India",
+    location: "Mumbai, India",
     points: [
       "Automated the weekly reporting stack end-to-end with SQL + Python.",
       "Built segmentation and funnel analysis that informed product pricing.",
