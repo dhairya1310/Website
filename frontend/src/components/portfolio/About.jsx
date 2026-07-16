@@ -18,7 +18,6 @@ export const About = () => (
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-5 left-5">
-                  <p className="mono-label text-[var(--teal)]">Analyst · US</p>
                   <p className="font-display text-xl text-white">{PROFILE.name}</p>
                 </div>
               </div>
