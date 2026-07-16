@@ -32,8 +32,15 @@ export const Projects = () => (
                 </span>
               </div>
               <div className="p-7">
-                <h3 className="font-display text-2xl font-medium text-white tracking-tight mb-3">{p.title}</h3>
-                <p className="text-[var(--text-2)] leading-relaxed mb-5">{p.desc}</p>
+                <h3 className="font-display text-2xl font-medium text-white tracking-tight mb-4">{p.title}</h3>
+                <ul className="space-y-2.5 mb-5">
+                  {p.points.map((pt, k) => (
+                    <li key={k} className="flex gap-3 text-[var(--text-2)] leading-relaxed">
+                      <span className="text-[var(--teal-dim)] mt-1.5 shrink-0">—</span>
+                      <span>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {p.stack.map((s) => (
                     <span key={s} className="font-mono text-xs text-[var(--text-2)] border border-[var(--line)] rounded px-2.5 py-1">

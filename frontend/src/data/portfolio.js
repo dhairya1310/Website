@@ -89,7 +89,11 @@ export const PROJECTS = [
   {
     tag: "Market Analytics",
     title: "Global Luxury Resale Market",
-    desc: "Scraped and analyzed 25K+ listings to map pricing power, brand velocity and depreciation curves across the global resale market — packaged into 10 interactive Tableau dashboards.",
+    points: [
+      "Analyzed 25K+ resale listings to see how top brands hold their value over time.",
+      "Broke down pricing power, brand velocity and depreciation across the global market.",
+      "Turned it all into 10 interactive Tableau dashboards anyone could explore.",
+    ],
     stack: ["Python", "SQL", "Tableau"],
     metric: "25K+ listings · 10 dashboards",
     image: "https://images.unsplash.com/photo-1709990740117-0eb9358fbd24",
@@ -98,7 +102,11 @@ export const PROJECTS = [
   {
     tag: "Research · Published",
     title: "Forecasting Micro/Macro Economic Indicators",
-    desc: "Built an LSTM + classical ML ensemble to forecast key economic indicators, reaching ~95% R². Published at the Hinweis International Conference ASIT 2024.",
+    points: [
+      "Built an LSTM and classical ML ensemble to forecast key economic indicators.",
+      "Hit around 95% R2 on data the models had never seen before.",
+      "Published the work at the Hinweis International Conference ASIT 2024.",
+    ],
     stack: ["LSTM", "Python", "Time Series"],
     metric: "~95% R² · ASIT 2024",
     image: "https://images.unsplash.com/photo-1689732888407-310424e3a372",
@@ -107,7 +115,11 @@ export const PROJECTS = [
   {
     tag: "Reinforcement Learning",
     title: "Dynamic Asset Allocation with Deep RL",
-    desc: "A reinforcement learning system that learns to allocate a portfolio across the S&P 500, Dow Jones and Hang Seng instead of static rules. DQN, A2C and PPO were trained on 30+ years of daily market and macro data, then tested on unseen 2023–2024 conditions. The best model (A2C) grew $100K into $129,914 with a 1.88 Sharpe ratio and sub-10% drawdown — via custom Gymnasium environments and an interactive Streamlit dashboard.",
+    points: [
+      "Trained DQN, A2C and PPO agents to allocate across the S&P 500, Dow Jones and Hang Seng instead of using fixed rules.",
+      "Used 30+ years of daily market and macro data, then tested on unseen 2023 to 2024 conditions.",
+      "The best model (A2C) grew $100K into $129,914 with a 1.88 Sharpe ratio and under 10% drawdown.",
+    ],
     stack: ["Python", "PyTorch", "Stable-Baselines3", "Gymnasium", "Streamlit"],
     metric: "1.88 Sharpe · +29.9% return",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
@@ -116,7 +128,11 @@ export const PROJECTS = [
   {
     tag: "Anomaly Detection",
     title: "Airbnb Anomaly Detection",
-    desc: "An unsupervised ML pipeline to detect pricing and review anomalies in Airbnb listings — flagging patterns that could signal data errors, fraud, or unreliable listings. After cleaning and merging listings, calendar and review data, I applied Isolation Forest and DBSCAN to surface outlier behavior — a scalable approach for platform trust and data-quality monitoring at scale.",
+    points: [
+      "Built an unsupervised pipeline to flag odd pricing and review patterns in Airbnb listings.",
+      "Cleaned and merged listings, calendar and review data, then ran Isolation Forest and DBSCAN.",
+      "Surfaced the kind of outliers that matter for platform trust and data quality at scale.",
+    ],
     stack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
     metric: "Isolation Forest · DBSCAN",
     image: "https://images.unsplash.com/photo-1704244003064-6d4e55ddd733",
