@@ -26,23 +26,23 @@ export const STATS = [
 export const ABOUT = [
   {
     no: "01",
-    title: "The Origin",
-    body: "Raised in Mumbai, I grew up fascinated by patterns — cricket stats, markets, anything with numbers behind it. That curiosity became a discipline: asking what the data is really saying before anyone reacts to it.",
+    title: "The Problem Space",
+    body: "I like problems that live somewhere between raw data and the decision someone actually has to make. Give me a spreadsheet of transactions, a government database migrating off a legacy server, or twelve months of stock prices, and I will find the pattern worth acting on.",
   },
   {
     no: "02",
-    title: "The Craft",
-    body: "At Accenture and Expify I learned analytics as a contact sport — shipping experiments, cutting reporting time, and defending recommendations in front of stakeholders who cared about revenue, not charts.",
+    title: "The Path",
+    body: "My path started in Mumbai, where I was analyzing luxury resale prices and building forecasting models while still in college, and it has taken me through retail analytics at Accenture, product experimentation at a fast moving startup, and now government scale data infrastructure work with Axion24. Along the way I picked up a master's in Data Science from Stevens Institute of Technology, though most of what I know came from messy real datasets that refused to behave.",
   },
   {
     no: "03",
-    title: "The Pivot",
-    body: "I moved deeper into data operations at Axion24 AI Technologies, owning pipelines and quality for AI workflows — where a single bad row can quietly break a model.",
+    title: "Numbers & Narrative",
+    body: "I am drawn to work that sits at the intersection of numbers and narrative. A model is only useful if someone can explain it in a room full of stakeholders, so I care as much about the SQL query as I do about the slide that follows it.",
   },
   {
     no: "04",
-    title: "The Edge",
-    body: "Now finishing an M.S. in Data Science at Stevens Institute, I pair rigorous forecasting and ML with a business instinct for what actually matters. I want the analyst seat where insight becomes decision.",
+    title: "Off the Clock",
+    body: "Outside of dashboards and forecasts, I am usually reading about markets, testing a new tool I probably do not need yet, or trying to make a complicated idea sound simple.",
   },
 ];
 
@@ -51,7 +51,7 @@ export const EXPERIENCE = [
     role: "Data Operations Analyst",
     company: "Axion24 AI Technologies",
     period: "May 2025 — Present",
-    location: "United States",
+    location: "Remote",
     points: [
       "Own end-to-end data pipelines, QA and reporting for AI operations workflows.",
       "Built monitoring that surfaces data-quality issues before they reach production models.",
