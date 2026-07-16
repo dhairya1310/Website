@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight, MapPin, Github, Linkedin, BarChart3 } from "lucide-react";
-import { PROFILE, STATS } from "@/data/portfolio";
+import { PROFILE } from "@/data/portfolio";
 
 const MaskLine = ({ children, delay = 0 }) => (
   <span className="block overflow-hidden">
@@ -118,20 +118,6 @@ export const Hero = () => {
             </div>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.3, duration: 0.8 }}
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 border-t border-[var(--line)]"
-        >
-          {STATS.map((s) => (
-            <div key={s.label} className="border-b border-r border-[var(--line)] py-6 px-4 md:px-6">
-              <div className="font-display text-3xl md:text-4xl font-semibold text-white tracking-tight">{s.value}</div>
-              <div className="mono-label mt-2">{s.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
     </section>
   );
