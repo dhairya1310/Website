@@ -2,7 +2,7 @@ export const PROFILE = {
   name: "Dhairya Shah",
   first: "Dhairya",
   last: "Shah",
-  headline: "Analyst — data, finance & business",
+  headline: "Data Analyst",
   positioning:
     "Data should simplify decisions, not overwhelm them.",
   location: "United States",

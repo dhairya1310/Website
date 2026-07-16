@@ -1,7 +1,6 @@
 import { ReactLenis } from "lenis/react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { Hero } from "@/components/portfolio/Hero";
-import { Ribbon } from "@/components/portfolio/Ribbon";
 import { About } from "@/components/portfolio/About";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
@@ -17,7 +16,6 @@ export default function Portfolio() {
         <Navbar />
         <main>
           <Hero />
-          <Ribbon />
           <About />
           <Experience />
           <Projects />
