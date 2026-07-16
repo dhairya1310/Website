@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+import html
 import logging
 import httpx
 from pathlib import Path
@@ -72,7 +73,12 @@ async def send_contact_email(payload: Contact) -> bool:
         logger.warning("EMERGENT_EMAIL_KEY not set — skipping email send (submission saved).")
         return False
 
-    html = f"""
+    safe_name = html.escape(payload.name)
+    safe_email = html.escape(payload.email)
+    safe_subject = html.escape(payload.subject) if payload.subject else "(no subject)"
+    safe_message = html.escape(payload.message)
+
+    html_body = f"""
     <table width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;background:#0b0b0d;padding:24px;">
       <tr><td>
         <table width="600" align="center" cellpadding="0" cellspacing="0" style="background:#141418;border-radius:12px;overflow:hidden;">
@@ -81,11 +87,11 @@ async def send_contact_email(payload: Contact) -> bool:
           </td></tr>
           <tr><td style="padding:28px;color:#e6e6e6;">
             <p style="margin:0 0 8px;font-size:14px;color:#9aa0a6;">From</p>
-            <p style="margin:0 0 18px;font-size:18px;color:#ffffff;">{payload.name} &lt;{payload.email}&gt;</p>
+            <p style="margin:0 0 18px;font-size:18px;color:#ffffff;">{safe_name} &lt;{safe_email}&gt;</p>
             <p style="margin:0 0 8px;font-size:14px;color:#9aa0a6;">Subject</p>
-            <p style="margin:0 0 18px;font-size:16px;color:#ffffff;">{payload.subject or '(no subject)'}</p>
+            <p style="margin:0 0 18px;font-size:16px;color:#ffffff;">{safe_subject}</p>
             <p style="margin:0 0 8px;font-size:14px;color:#9aa0a6;">Message</p>
-            <p style="margin:0;font-size:15px;line-height:1.6;color:#d0d0d0;white-space:pre-wrap;">{payload.message}</p>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#d0d0d0;white-space:pre-wrap;">{safe_message}</p>
           </td></tr>
         </table>
       </td></tr>
@@ -94,7 +100,7 @@ async def send_contact_email(payload: Contact) -> bool:
     body = {
         "to": [CONTACT_RECIPIENT],
         "subject": f"Portfolio contact: {payload.subject or payload.name}",
-        "html": html,
+        "html": html_body,
         "from_name": EMAIL_FROM_NAME,
         "contact_email": payload.email,
     }
