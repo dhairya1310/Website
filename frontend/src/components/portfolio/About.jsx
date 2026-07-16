@@ -12,9 +12,9 @@ export const About = () => (
             <div className="lg:sticky lg:top-28">
               <div className="relative overflow-hidden rounded-2xl border border-white/10">
                 <img
-                  src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4"
+                  src="/portrait.webp"
                   alt="Dhairya Shah"
-                  className="w-full h-[420px] object-cover grayscale hover:grayscale-0 transition-[filter] duration-700"
+                  className="w-full h-[420px] object-cover object-top hover:scale-[1.02] transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-5 left-5">
