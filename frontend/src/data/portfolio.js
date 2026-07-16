@@ -88,7 +88,7 @@ export const EXPERIENCE = [
 export const PROJECTS = [
   {
     tag: "Market Analytics",
-    title: "Global Luxury Resale Market",
+    title: "Analysis of the Global Luxury Resale Market",
     points: [
       "Analyzed 25K+ resale listings to see how top brands hold their value over time.",
       "Broke down pricing power, brand velocity and depreciation across the global market.",
