@@ -10,9 +10,9 @@ export const PROFILE = {
   phone: "+1 551-362-9992",
   resume: "/Dhairya_Shah_Resume.pdf",
   links: {
-    linkedin: "https://www.linkedin.com/in/dhairya-shah",
-    github: "https://github.com/dhairya-shah",
-    tableau: "https://public.tableau.com/app/profile/dhairya.shah",
+    linkedin: "https://www.linkedin.com/in/dhairya-shah-b00b111b6/",
+    github: "https://github.com/dhairya1310",
+    tableau: "https://public.tableau.com/app/profile/dhairya1310",
   },
 };
 
@@ -116,17 +116,12 @@ export const SKILLS = [
     items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL"],
   },
   {
-    group: "Tools & Platforms",
-    items: [
-      "Tableau",
-      "Power BI",
-      "Looker",
-      "Snowflake",
-      "AWS",
-      "Azure",
-      "Databricks",
-      "Git",
-    ],
+    group: "Softwares",
+    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git"],
+  },
+  {
+    group: "BI / Vizz",
+    items: ["Tableau", "Power BI", "Looker"],
   },
 ];
 
@@ -146,8 +141,8 @@ export const EDUCATION = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: "Databricks Certified Data Analyst Associate", issuer: "Databricks", link: "https://www.databricks.com/learn/certification" },
-  { name: "Bloomberg Market Concepts", issuer: "Bloomberg", link: "https://portal.bloombergforeducation.com/certificates" },
+  { name: "Databricks Certified Data Analyst Associate", issuer: "Databricks", link: "https://credentials.databricks.com/b0f5c872-2c4c-4dea-94bc-8d69042a7c83#acc.g6kWbe3d" },
+  { name: "Bloomberg Market Concepts", issuer: "Bloomberg", link: "https://portal.bloombergforeducation.com/certificates/HKKNYSc529ovfuAdsgdBMi4Q" },
   { name: "Big Data & Machine Learning", issuer: "Google Cloud", link: "https://www.cloudskillsboost.google/" },
   { name: "Data Visualization", issuer: "IBM", link: "https://www.credly.com/" },
   { name: "Big Data", issuer: "UC San Diego", link: "https://www.coursera.org/" },

@@ -8,25 +8,27 @@ export const Skills = () => (
       <SectionHeader index="/ 04" kicker="Skills & Education" title="The toolkit." />
 
       <div className="grid lg:grid-cols-12 gap-x-16 gap-y-14">
-        <div className="lg:col-span-7 space-y-10">
-          {SKILLS.map((s, i) => (
-            <Reveal key={s.group} delay={i * 0.05}>
-              <div className="border-t border-[var(--line)] pt-6">
-                <p className="mono-label mb-5 text-[var(--teal-dim)]">{s.group}</p>
-                <div className="flex flex-wrap gap-3">
-                  {s.items.map((item) => (
-                    <span
-                      key={item}
-                      className="font-mono text-sm text-[var(--text)] border border-white/10 rounded-lg px-4 py-2 hover:border-[var(--teal)] hover:text-[var(--teal)] transition-colors duration-200"
-                      data-testid={`skill-${item}`}
-                    >
-                      {item}
-                    </span>
-                  ))}
+        <div className="lg:col-span-7">
+          <div className="border-t border-[var(--line)]">
+            {SKILLS.map((s, i) => (
+              <Reveal key={s.group} delay={i * 0.05}>
+                <div className="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-3 sm:gap-8 border-b border-[var(--line)] py-6" data-testid={`skill-row-${i}`}>
+                  <p className="mono-label text-[var(--teal-dim)] pt-1">{s.group}</p>
+                  <div className="flex flex-wrap gap-2.5">
+                    {s.items.map((item) => (
+                      <span
+                        key={item}
+                        className="font-mono text-sm text-[var(--text)] border border-white/10 rounded-lg px-3.5 py-1.5 hover:border-[var(--teal)] hover:text-[var(--teal)] transition-colors duration-200"
+                        data-testid={`skill-${item}`}
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+              </Reveal>
+            ))}
+          </div>
         </div>
 
         <div className="lg:col-span-5">

@@ -62,7 +62,7 @@ export const Hero = () => {
         <h1 className="font-display font-semibold tracking-tighter text-[15vw] sm:text-[12vw] lg:text-[10.5rem] leading-[0.85] text-white">
           <MaskLine delay={0.35}>{PROFILE.first}</MaskLine>
           <MaskLine delay={0.5}>
-            <span className="outline-text">{PROFILE.last}</span>
+            <span className="text-white">{PROFILE.last}</span>
           </MaskLine>
         </h1>
 

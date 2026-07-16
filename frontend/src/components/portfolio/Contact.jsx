@@ -40,7 +40,7 @@ export const Contact = () => {
   };
 
   const inputCls =
-    "w-full rounded-lg bg-[var(--bg)] border border-white/10 px-4 py-3.5 text-white placeholder:text-[var(--text-3)] focus:outline-none focus:border-[var(--teal)] focus:ring-1 focus:ring-[var(--teal)] transition-colors duration-200 font-[Inter]";
+    "w-full rounded-lg bg-[var(--bg)] border border-white/10 px-4 py-3.5 text-white placeholder:text-[var(--text-3)] focus:outline-none focus:border-[var(--teal)] focus:ring-1 focus:ring-[var(--teal)] transition-colors duration-200";
 
   return (
     <section id="contact" className="relative py-28 md:py-40 bg-[var(--surface)]/30 border-t border-[var(--line)]" data-testid="contact-section">
