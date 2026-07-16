@@ -4,7 +4,7 @@ export const PROFILE = {
   last: "Shah",
   headline: "Analyst — data, finance & business",
   positioning:
-    "I turn messy, high-volume data into decisions — forecasting, experimentation and dashboards that move real numbers.",
+    "Data should simplify decisions, not overwhelm them.",
   location: "United States",
   email: "dshah5744@gmail.com",
   phone: "+1 551-362-9992",
