@@ -1,0 +1,32 @@
+import { ReactLenis } from "lenis/react";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { Ribbon } from "@/components/portfolio/Ribbon";
+import { About } from "@/components/portfolio/About";
+import { Experience } from "@/components/portfolio/Experience";
+import { Projects } from "@/components/portfolio/Projects";
+import { Skills } from "@/components/portfolio/Skills";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+
+export default function Portfolio() {
+  return (
+    <ReactLenis root options={{ lerp: 0.09, smoothWheel: true }}>
+      <div className="grain relative min-h-screen bg-[var(--bg)]" data-testid="portfolio-root">
+        <Navbar />
+        <main>
+          <Hero />
+          <Ribbon />
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Certifications />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ReactLenis>
+  );
+}
