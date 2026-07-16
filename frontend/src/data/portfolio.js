@@ -144,8 +144,9 @@ export const CERTIFICATIONS = [
   { name: "Databricks Certified Data Analyst Associate", issuer: "Databricks", link: "https://credentials.databricks.com/b0f5c872-2c4c-4dea-94bc-8d69042a7c83#acc.g6kWbe3d" },
   { name: "Bloomberg Market Concepts", issuer: "Bloomberg", link: "https://portal.bloombergforeducation.com/certificates/HKKNYSc529ovfuAdsgdBMi4Q" },
   { name: "Big Data & Machine Learning", issuer: "Google Cloud", link: "https://www.cloudskillsboost.google/" },
-  { name: "Data Visualization", issuer: "IBM", link: "https://www.credly.com/" },
-  { name: "Big Data", issuer: "UC San Diego", link: "https://www.coursera.org/" },
-  { name: "Exploratory Data Analysis", issuer: "UIUC", link: "https://www.coursera.org/" },
-  { name: "Sequences, Time Series & Prediction", issuer: "DeepLearning.AI", link: "https://www.coursera.org/" },
+  { name: "Data Visualization", issuer: "IBM", link: "https://www.coursera.org/account/accomplishments/verify/6YAUBGQN5BQV" },
+  { name: "Big Data", issuer: "UC San Diego", link: "https://www.coursera.org/account/accomplishments/verify/73Q54NV9LG9B" },
+  { name: "Exploratory Data Analysis", issuer: "UIUC", link: "https://www.coursera.org/account/accomplishments/verify/TLV7BY7Q79YB" },
+  { name: "Sequences, Time Series & Prediction", issuer: "DeepLearning.AI", link: "https://www.coursera.org/account/accomplishments/verify/YQZ4LZC6A8FC" },
+  { name: "Project Management", issuer: "Google", link: "https://www.coursera.org/account/accomplishments/verify/4CZ7LEW4GVFC" },
 ];

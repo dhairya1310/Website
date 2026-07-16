@@ -6,7 +6,7 @@ import { CERTIFICATIONS } from "@/data/portfolio";
 export const Certifications = () => (
   <section id="certifications" className="relative py-28 md:py-40" data-testid="certifications-section">
     <div className="max-w-7xl mx-auto px-6 lg:px-10">
-      <SectionHeader index="/ 05" kicker="Certifications" title="Verified, not vibes." />
+      <SectionHeader index="/ 06" kicker="Certifications" title="Verified, not vibes." />
 
       <div className="border-t border-[var(--line)]">
         {CERTIFICATIONS.map((c, i) => (

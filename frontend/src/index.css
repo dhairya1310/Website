@@ -34,6 +34,11 @@ body {
 .font-display {
   font-family: "Bricolage Grotesque", sans-serif;
 }
+.font-name {
+  font-family: "Instrument Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+}
 .font-mono {
   font-family: "IBM Plex Mono", monospace;
 }

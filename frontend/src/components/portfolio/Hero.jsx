@@ -59,7 +59,7 @@ export const Hero = () => {
           </span>
         </motion.div>
 
-        <h1 className="font-display font-semibold tracking-tighter text-[15vw] sm:text-[12vw] lg:text-[10.5rem] leading-[0.85] text-white">
+        <h1 className="font-name text-[17vw] sm:text-[13vw] lg:text-[12rem] leading-[0.9] text-white">
           <MaskLine delay={0.35}>{PROFILE.first}</MaskLine>
           <MaskLine delay={0.5}>
             <span className="text-white">{PROFILE.last}</span>
