@@ -1,0 +1,113 @@
+{
+  "theme": "dark",
+  "archetype": "SWISS & HIGH-CONTRAST / RETRO-FUTURISM Hybrid",
+  "typography": {
+    "headings": {
+      "font": "Outfit, sans-serif",
+      "weight": "font-light to font-black (variable weights)",
+      "tracking": "tracking-tighter",
+      "forbidden": ["Inter", "Roboto", "Open Sans", "Lato"]
+    },
+    "body": {
+      "font": "Inter, sans-serif",
+      "weight": "font-normal",
+      "tracking": "tracking-normal"
+    },
+    "accent_mono": {
+      "font": "JetBrains Mono, monospace",
+      "usage": "Overlines, statistics, metrics, labels, code snippets, dates",
+      "style": "uppercase, tracking-[0.2em], text-xs"
+    }
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#0E0E11",
+    "surface_glass": "bg-black/60 backdrop-blur-2xl border border-white/5",
+    "primary": "#00F0FF",
+    "primary_glow": "drop-shadow-[0_0_12px_rgba(0,240,255,0.6)]",
+    "text": {
+      "primary": "#F5F5F5",
+      "secondary": "#A1A1AA",
+      "tertiary": "#52525B"
+    },
+    "forbidden": ["#1B93A4", "pure #000000"]
+  },
+  "visual_enhancers": {
+    "noise": "Subtle grain texture overlay on the body (opacity-20) to kill digital flatness",
+    "tracing_beam": "Use framer-motion to create a 1px electric teal line tracing project cards on hover",
+    "grid_background": "Faint 1px grid lines (border-white/5) or dot-matrix backgrounds to enforce the 'quant/data' motif",
+    "glow": "Radial gradients using the accent color for subtle background illumination behind key metrics"
+  },
+  "components_strategy": {
+    "header": "Crystal Glass header (bg-black/60, backdrop-blur-xl) with a delicate 1px border-white/10 on the bottom. Do NOT make it fully transparent.",
+    "hero": "Custom pure HTML/Tailwind + Framer Motion. Large kinetic text with masked line-by-line reveal (Dhairya Shah). US Location badge as a technical pill component.",
+    "about": "Numbered manifesto layout. Use JetBrains Mono for chapter numbers (01. The Origin, 02. The Pivot). Left-aligned, editorial typography.",
+    "experience": "Vertical timeline structure. Use a sticky 1px vertical line that 'fills up' with electric teal on scroll using Framer Motion.",
+    "projects": "Bento grid (Mode B: High Density). Use solid flat surfaces with sharp 1px borders. Add subtle scaling on hover.",
+    "skills": "Dense bento grid. Skills grouped as monospaced technical tags.",
+    "contact": "Shadcn UI Form heavily customized to fit the dark aesthetic. Inputs should have #050505 background and 1px borders, lighting up with an electric teal focus ring."
+  },
+  "motion": {
+    "scroll": "Lenis smooth scroll (MANDATORY). Wrapping the layout to provide momentum scrolling.",
+    "reveals": "Framer motion for scroll-triggered staggered y-axis reveals. Every element should feel 'placed' intentionally.",
+    "marquee": "react-fast-marquee for a slow, editorial ribbon of text (e.g., 'DATA • FINANCE • QUANT • BUSINESS'). Massive outline text.",
+    "micro": "Hover states on all buttons and cards with smooth transform and border color transitions."
+  },
+  "accessibility": {
+    "contrast": "Ensure text meets WCAG AA (4.5:1). Electric teal used against #050505 passes. Use text shadows over images.",
+    "motion": "Respect prefers-reduced-motion media query for Framer Motion.",
+    "testing": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., data-testid='hero-contact-button')."
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1757466762489-52fea38071ad",
+        "description": "Abstract blue waves of glowing particles for subtle background or visual accent"
+      },
+      "portrait": {
+        "url": "https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4",
+        "description": "Moody, dark profile of a professional male in a blazer (placeholder for Dhairya)"
+      },
+      "project_finance": {
+        "url": "https://images.unsplash.com/photo-1689732888407-310424e3a372",
+        "description": "Neon candlestick chart for Economic Forecasting project"
+      },
+      "project_luxury": {
+        "url": "https://images.unsplash.com/photo-1709990740117-0eb9358fbd24",
+        "description": "Abstract dark blue wavy texture for Global Luxury Resale project"
+      }
+    },
+    "logos": "Use simple text spans or lucide-react icons for company logos (Accenture, Stevens, etc.) to maintain the minimalist developer aesthetic."
+  },
+  "libraries": {
+    "framer_motion": "yarn add framer-motion",
+    "lucide_react": "yarn add lucide-react",
+    "lenis": "yarn add @studio-freight/react-lenis",
+    "fast_marquee": "yarn add react-fast-marquee",
+    "sonner": "yarn add sonner"
+  },
+  "instructions_to_main_agent": [
+    "Install the required libraries mentioned in the JSON.",
+    "All React code should be written in .js/.jsx files (not .tsx) as the system uses .js files.",
+    "Implement Lenis smooth scrolling in a top-level App or Layout component wrapper.",
+    "Create the Kinetic Hero: Use framer-motion to animate the 'Dhairya Shah' text from y: 100% and opacity 0 within an overflow-hidden wrapper, simulating a mask reveal.",
+    "Style the About section as a 'Numbered Manifesto'. Use JetBrains Mono for the numbers and align text in an editorial fashion.",
+    "Build the Experience section as a vertical timeline. Connect nodes with a 1px vertical border.",
+    "Implement the Contact section with Resend integration or a well-stubbed handler for the customized Shadcn form.",
+    "Use data-testid on every CTA, link, form input, and submit button."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic outputs. Avoid the 'AI slop' aesthetic. Make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Prioritize asymmetric or structured bento grids.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) combined with subtle 1px inner borders.",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. Always add transitions for specific interactive elements excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons. Use lucide-react instead.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable (e.g., p-12, gap-8). Cramped designs look cheap.",
+    "Ensure the header navigation is NEVER fully transparent. It must have a solid or blurred background.",
+    "Always use modern pill-shaped or sharp technical buttons."
+  ]
+}
