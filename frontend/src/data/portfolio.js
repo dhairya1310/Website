@@ -155,7 +155,7 @@ export const SKILLS = [
   },
   {
     group: "BI / Viz",
-    items: ["Tableau", "Power BI", "Looker"],
+    items: ["Tableau", "Power BI", "Looker", "Excel Dashboards"],
   },
 ];
 
