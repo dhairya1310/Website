@@ -65,9 +65,9 @@ export const EXPERIENCE = [
     period: "Jan 2024 — Jun 2024",
     location: "Mumbai, India",
     points: [
-      "Ran category analytics and A/B experiments for a retail client.",
-      "Designed KPI dashboards adopted by category managers for weekly decisions.",
-      "Turned experimentation insights into merchandising changes.",
+      "Ran category analytics and A/B experiments for a retail client across product categories and store regions.",
+      "Built Power BI dashboards on category sales and promo lift, adopted by merchandising leads for weekly markdown decisions.",
+      "Delivered pricing and promo recommendations that lifted category revenue by 8% the following quarter.",
     ],
     metric: "+8% category revenue",
   },
