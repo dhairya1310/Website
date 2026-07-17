@@ -1,5 +1,5 @@
 import { Reveal, SectionHeader } from "./Reveal";
-import { ABOUT, PROFILE } from "@/data/portfolio";
+import { ABOUT } from "@/data/portfolio";
 
 export const About = () => (
   <section id="about" className="relative py-28 md:py-40" data-testid="about-section">
@@ -16,10 +16,6 @@ export const About = () => (
                   alt="Dhairya Shah"
                   className="w-full h-[440px] object-cover object-top hover:scale-[1.02] transition-transform duration-700"
                 />
-              </div>
-              <div className="mt-4 flex items-baseline justify-between">
-                <p className="font-display text-xl text-white">{PROFILE.name}</p>
-                <p className="mono-label text-[var(--teal-dim)]">Analyst · US</p>
               </div>
             </div>
           </Reveal>
