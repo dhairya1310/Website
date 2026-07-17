@@ -2,7 +2,7 @@ export const PROFILE = {
   name: "Dhairya Shah",
   first: "Dhairya",
   last: "Shah",
-  headline: "Turning Data Into Decisions",
+  headline: "Precision Over Assumption",
   positioning:
     "Built for the gap between a dataset and a decision.",
   location: "United States",
@@ -26,23 +26,23 @@ export const STATS = [
 export const ABOUT = [
   {
     no: "01",
-    title: "The Problem Space",
-    body: "I like problems that live somewhere between raw data and the decision someone actually has to make. Give me a spreadsheet of transactions, a government database migrating off a legacy server, or twelve months of stock prices, and I will find the pattern worth acting on.",
+    title: "Who I Am",
+    body: "I get restless when something is half explained. Not just with work, with anything. Someone tells me half a story and I will ask questions until I have the whole thing, whether or not it was any of my business.",
   },
   {
     no: "02",
-    title: "The Path",
-    body: "My path started in Mumbai, where I was analyzing luxury resale prices and building forecasting models while still in college, and it has taken me through retail analytics at Accenture, product experimentation at a fast moving startup, and now government scale data infrastructure work with Axion24. Along the way I picked up a master's in Data Science from Stevens Institute of Technology, though most of what I know came from messy real datasets that refused to behave.",
+    title: "Mumbai to Hoboken",
+    body: "I studied Information Technology in Mumbai, the kind of degree broad enough that you figure out what you actually like along the way. What I liked was chasing the moment something didn't add up. That instinct followed me to Hoboken, where I did my master's at Stevens and finally had room to chase questions nobody was assigning me.",
   },
   {
     no: "03",
-    title: "Numbers & Narrative",
-    body: "I am drawn to work that sits at the intersection of numbers and narrative. A model is only useful if someone can explain it in a room full of stakeholders, so I care as much about the SQL query as I do about the slide that follows it.",
+    title: "How I Actually Work",
+    body: "I would rather spend an extra hour understanding a problem than five minutes guessing at a fix. Most of what I have built started because I did not like the answer \"that is just how it is.\" Some of it turned into something worth showing. Most of it just made me better at the next thing."  
   },
   {
     no: "04",
-    title: "Off the Clock",
-    body: "Outside of dashboards and forecasts, I am usually reading about markets, testing a new tool I probably do not need yet, or trying to make a complicated idea sound simple.",
+    title: "One More Thing",
+    body: "I will let the work speak for the rest, though I could keep going until this bio turns into a resume with better sentences. If any of it lines up with what you are hiring for, my contact info is a few scrolls away.",
   },
 ];
 
@@ -143,11 +143,11 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     group: "Programming",
-    items: ["Python", "SQL", "R", "Excel"],
+    items: ["Python", "SQL", "R", "Excel", "C++", "Jupyter"],
   },
   {
     group: "Analytics",
-    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL"],
+    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Tesing"],
   },
   {
     group: "Software",
@@ -157,13 +157,17 @@ export const SKILLS = [
     group: "BI / Viz",
     items: ["Tableau", "Power BI", "Looker", "Excel Dashboards"],
   },
+  {
+    group: "ML/Modeling",
+    items: ["PyTorch", "Stable-Baselines3", "Gymnasium", "Scikit-learn",],
+  },
 ];
 
 export const EDUCATION = [
   {
     degree: "M.S. Data Science",
     school: "Stevens Institute of Technology",
-    period: "May 2026",
+    period: "Graduated May 2026",
     gpa: "GPA 3.73",
   },
   {
