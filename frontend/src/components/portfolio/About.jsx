@@ -14,12 +14,12 @@ export const About = () => (
                 <img
                   src="/portrait.webp"
                   alt="Dhairya Shah"
-                  className="w-full h-[420px] object-cover object-top hover:scale-[1.02] transition-transform duration-700"
+                  className="w-full h-[440px] object-cover object-top hover:scale-[1.02] transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-5 left-5">
-                  <p className="font-display text-xl text-white">{PROFILE.name}</p>
-                </div>
+              </div>
+              <div className="mt-4 flex items-baseline justify-between">
+                <p className="font-display text-xl text-white">{PROFILE.name}</p>
+                <p className="mono-label text-[var(--teal-dim)]">Analyst · US</p>
               </div>
             </div>
           </Reveal>
