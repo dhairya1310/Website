@@ -53,9 +53,9 @@ export const EXPERIENCE = [
     period: "May 2025 — Present",
     location: "Remote",
     points: [
-      "Own end-to-end data pipelines, QA and reporting for AI operations workflows.",
-      "Built monitoring that surfaces data-quality issues before they reach production models.",
-      "Partner with engineering to standardize ingestion and reduce manual cleanup.",
+      "Migrated government client data from legacy servers to AWS and Azure, validating field integrity after every cutover across two projects.",
+      "Built the admin analytics layer tracking page visits, downloads, and device usage, giving the board visibility into citizen and industry engagement.",
+      "Supported auto-ingestion pipelines that kept new circulars flowing into public tools automatically, holding a 99% uptime SLA.",
     ],
     metric: "Live",
   },
