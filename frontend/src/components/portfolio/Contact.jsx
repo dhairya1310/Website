@@ -52,7 +52,7 @@ export const Contact = () => {
           <div className="lg:col-span-5">
             <Reveal>
               <p className="text-lg text-[var(--text-2)] leading-relaxed mb-10 max-w-md">
-                Hiring for a data, finance or business analyst role? Send a note and I'll respond within a day.
+                Hiring for a data, finance or business analyst role? Send a note and I'll respond soon.
               </p>
               <div className="space-y-1">
                 {directs.map((d) => (
