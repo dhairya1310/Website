@@ -84,8 +84,8 @@ class TestContact:
         # generated fields
         assert "id" in data and isinstance(data["id"], str) and len(data["id"]) > 0
         assert "created_at" in data and isinstance(data["created_at"], str)
-        # email_sent expected False since EMERGENT_EMAIL_KEY not provisioned
-        assert data.get("email_sent") is False
+        # email_sent expected True now that RESEND_API_KEY is configured
+        assert data.get("email_sent") is True, f"Expected email_sent=True, got {data.get('email_sent')}"
 
         # Persist in the module namespace via pytest for the list test
         TestContact.last_created = data

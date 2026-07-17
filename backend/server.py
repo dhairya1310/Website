@@ -21,10 +21,11 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-# Email (Emergent managed Resend proxy) — base url is a constant, survives deploy
-EMAIL_BASE_URL = "https://integrations.emergentagent.com"
-EMAIL_KEY = os.environ.get('EMERGENT_EMAIL_KEY', '')
-EMAIL_FROM_NAME = os.environ.get('EMAIL_FROM_NAME', 'Dhairya Shah')
+# Email (Resend direct API using the user's own key)
+RESEND_API_URL = "https://api.resend.com/emails"
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
+EMAIL_FROM_NAME = os.environ.get('EMAIL_FROM_NAME', 'Dhairya Shah Portfolio')
+EMAIL_FROM_ADDRESS = os.environ.get('EMAIL_FROM_ADDRESS', 'onboarding@resend.dev')
 CONTACT_RECIPIENT = os.environ.get('CONTACT_RECIPIENT', 'dshah5744@gmail.com')
 
 app = FastAPI()
@@ -69,8 +70,8 @@ class Contact(BaseModel):
 
 # ---------- Email helper ----------
 async def send_contact_email(payload: Contact) -> bool:
-    if not EMAIL_KEY:
-        logger.warning("EMERGENT_EMAIL_KEY not set — skipping email send (submission saved).")
+    if not RESEND_API_KEY:
+        logger.warning("RESEND_API_KEY not set — skipping email send (submission saved).")
         return False
 
     safe_name = html.escape(payload.name)
@@ -98,21 +99,28 @@ async def send_contact_email(payload: Contact) -> bool:
     </table>
     """
     body = {
+        "from": f"{EMAIL_FROM_NAME} <{EMAIL_FROM_ADDRESS}>",
         "to": [CONTACT_RECIPIENT],
         "subject": f"Portfolio contact: {payload.subject or payload.name}",
         "html": html_body,
-        "from_name": EMAIL_FROM_NAME,
-        "contact_email": payload.email,
+        "reply_to": payload.email,
     }
     try:
         async with httpx.AsyncClient(timeout=30) as http_client:
             resp = await http_client.post(
-                f"{EMAIL_BASE_URL}/api/v1/email/send",
-                headers={"X-Email-Key": EMAIL_KEY},
+                RESEND_API_URL,
+                headers={
+                    "Authorization": f"Bearer {RESEND_API_KEY}",
+                    "Content-Type": "application/json",
+                },
                 json=body,
             )
         resp.raise_for_status()
+        logger.info(f"Resend email sent: {resp.json().get('id')}")
         return True
+    except httpx.HTTPStatusError as e:
+        logger.error(f"Contact email send failed: {e.response.status_code} {e.response.text}")
+        return False
     except Exception as e:
         logger.error(f"Contact email send failed: {e}")
         return False
