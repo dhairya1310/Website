@@ -4,7 +4,7 @@ export const PROFILE = {
   last: "Shah",
   headline: "Turning Data Into Decisions",
   positioning:
-    "Data should simplify decisions, not overwhelm them.",
+    "Built for the gap between a dataset and a decision.",
   location: "United States",
   email: "dshah5744@gmail.com",
   phone: "+1 551-362-9992",
