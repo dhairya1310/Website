@@ -77,9 +77,9 @@ export const EXPERIENCE = [
     period: "Jun 2022 — Oct 2023",
     location: "Mumbai, India",
     points: [
-      "Automated the weekly reporting stack end-to-end with SQL + Python.",
-      "Built segmentation and funnel analysis that informed product pricing.",
-      "Owned the analytics roadmap as the first data hire at the startup.",
+      "Automated the weekly reporting pipeline across Postgres, HubSpot, Google Analytics, and Excel, cutting manual prep from 40 hours to under 8.",
+      "Led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session by 15%.",
+      "Built 12 Tableau dashboards on customer lifecycle and segmentation used in weekly business reviews.",
     ],
     metric: "40→8 hrs/wk · +15% rev/session",
   },
