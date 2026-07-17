@@ -150,7 +150,7 @@ export const SKILLS = [
     items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL"],
   },
   {
-    group: "Softwares",
+    group: "Software",
     items: ["Snowflake", "AWS", "Azure", "Databricks", "Git"],
   },
   {
