@@ -6,7 +6,7 @@ export const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
       <div>
         <p className="font-display text-2xl text-white tracking-tight">{PROFILE.name}</p>
-        <p className="mono-label mt-2">{PROFILE.headline}</p>
+        <p className="mono-label mt-2">Turning Data Into Decisions</p>
       </div>
       <div className="flex items-center gap-8">
         <span className="mono-label">© {new Date().getFullYear()} · Built with data</span>
