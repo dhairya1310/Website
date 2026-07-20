@@ -147,7 +147,7 @@ export const SKILLS = [
   },
   {
     group: "Analytics",
-    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Tesing"],
+    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Testing"],
   },
   {
     group: "Software",
