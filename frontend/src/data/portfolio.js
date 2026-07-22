@@ -151,7 +151,7 @@ export const SKILLS = [
   },
   {
     group: "Software",
-    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git", "ETL"],
+    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git", "ETL", "SAS"],
   },
   {
     group: "BI / Viz",
