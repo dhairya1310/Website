@@ -53,21 +53,21 @@ export const EXPERIENCE = [
     period: "May 2025 — Present",
     location: "Remote",
     points: [
-      "Migrated government client data from legacy servers to AWS and Azure, validating field integrity after every cutover across two projects.",
-      "Built the admin analytics layer tracking page visits, downloads, and device usage, giving the board visibility into citizen and industry engagement.",
-      "Supported auto-ingestion pipelines that kept new circulars flowing into public tools automatically, holding a 99% uptime SLA.",
+      "Validated field-level integrity across roughly 250K to 300K records in two government data migrations to AWS and Azure, applying anomaly detection to catch irregular patterns before they reached downstream systems.",
+      "Processed 8 to 12K circulars a month across three languages, flagging metadata inconsistencies and 40 to 60 duplicate submissions monthly, cutting manual review by 20 to 30%.",
+      "Built the admin analytics layer surfacing 15 to 20 suspicious access spikes a week, partnering with product and leadership to sustain a 99% uptime SLA.",
     ],
     metric: "Live",
   },
   {
-    role: "Data Analyst Intern",
+    role: "Data Analyst",
     company: "Accenture",
     period: "Jan 2024 — Jun 2024",
     location: "Mumbai, India",
     points: [
-      "Ran category analytics and A/B experiments for a retail client across product categories and store regions.",
+      "Built statistical models for sales reporting and short-term revenue forecasts across product categories and store regions.",
       "Built Power BI dashboards on category sales and promo lift, adopted by merchandising leads for weekly markdown decisions.",
-      "Delivered pricing and promo recommendations that lifted category revenue by 8% the following quarter.",
+      "Ran scenario analysis and hypothesis testing on pricing changes, delivering recommendations that lifted category revenue by 8%.",
     ],
     metric: "+8% category revenue",
   },
@@ -77,8 +77,8 @@ export const EXPERIENCE = [
     period: "Jun 2022 — Oct 2023",
     location: "Mumbai, India",
     points: [
+      "Designed and led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session by 15%.",
       "Automated the weekly reporting pipeline across Postgres, HubSpot, Google Analytics, and Excel, cutting manual prep from 40 hours to under 8.",
-      "Led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session by 15%.",
       "Built 12 Tableau dashboards on customer lifecycle and segmentation used in weekly business reviews.",
     ],
     metric: "40→8 hrs/wk · +15% rev/session",
@@ -147,7 +147,7 @@ export const SKILLS = [
   },
   {
     group: "Analytics",
-    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Testing"],
+    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Fraud & Risk Analysis"],
   },
   {
     group: "Software",
@@ -159,7 +159,7 @@ export const SKILLS = [
   },
   {
     group: "ML/Modeling",
-    items: ["PyTorch", "Stable-Baselines3", "Gymnasium", "Scikit-learn",],
+    items: ["PyTorch", "Stable-Baselines3", "Gymnasium", "Scikit-learn", "Time Series Forecasting", "Logistic Regression"],
   },
 ];
 
