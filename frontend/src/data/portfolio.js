@@ -147,11 +147,11 @@ export const SKILLS = [
   },
   {
     group: "Analytics",
-    items: ["A/B Testing", "Forecasting", "Segmentation", "KPI Design", "ETL", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Fraud & Risk Analysis"],
+    items: ["A/B Testing", "Segmentation", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Fraud & Risk Analysis"],
   },
   {
     group: "Software",
-    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git"],
+    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git", "ETL"],
   },
   {
     group: "BI / Viz",
