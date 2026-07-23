@@ -50,8 +50,8 @@ export const EXPERIENCE = [
   {
     role: "Data Operations Analyst",
     company: "Axion24 AI Technologies",
-    period: "May 2025 — Present",
-    location: "Remote",
+    period: "May 2025 — Aug 2025",
+    location: "Mumbai, India",
     points: [
       "Validated field-level integrity across roughly 250K to 300K records in two government data migrations to AWS and Azure, applying anomaly detection to catch irregular patterns before they reached downstream systems.",
       "Processed 8 to 12K circulars a month across three languages, flagging metadata inconsistencies and 40 to 60 duplicate submissions monthly, cutting manual review by 20 to 30%.",
