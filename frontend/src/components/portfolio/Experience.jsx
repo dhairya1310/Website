@@ -26,14 +26,14 @@ export const Experience = () => {
                   >
                     <span className="font-mono text-sm text-[var(--teal-dim)] w-8 shrink-0">0{i + 1}</span>
                     <div className="flex-1 min-w-0">
-                      <h3 className={`font-display text-2xl md:text-4xl font-medium tracking-tight transition-colors duration-200 ${isOpen ? "text-[var(--teal)]" : "text-white group-hover:text-[var(--teal)]"}`}>
+                      <h3 className={`font-display text-2xl md:text-4xl font-medium tracking-tight transition-colors duration-200 ${isOpen ? "text-[var(--teal)]" : "text-[var(--text)] group-hover:text-[var(--teal)]"}`}>
                         {job.role}
                       </h3>
                       <p className="font-mono text-sm text-[var(--text-2)] mt-1.5">
                         {job.company} · {job.period}
                       </p>
                     </div>
-                    <span className={`grid place-items-center h-10 w-10 shrink-0 rounded-full border transition-colors duration-300 ${isOpen ? "bg-[var(--teal)] border-[var(--teal)] text-black" : "border-white/15 text-white group-hover:border-[var(--teal)]"}`}>
+                    <span className={`grid place-items-center h-10 w-10 shrink-0 rounded-full border transition-colors duration-300 ${isOpen ? "bg-[var(--teal)] border-[var(--teal)] text-black" : "border-[var(--line)] text-[var(--text)] group-hover:border-[var(--teal)]"}`}>
                       <motion.span animate={{ rotate: isOpen ? 45 : 0 }} transition={{ duration: 0.3 }}>
                         <Plus size={18} />
                       </motion.span>

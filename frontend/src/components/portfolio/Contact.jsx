@@ -30,7 +30,7 @@ export const Contact = () => {
     setLoading(true);
     try {
       await axios.post(`${API}/contact`, form);
-      toast.success("Message sent — I wll get back to you soon.");
+      toast.success("Message sent — I will get back to you soon.");
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
       toast.error("Something went wrong. Please email me directly.");
@@ -40,7 +40,7 @@ export const Contact = () => {
   };
 
   const inputCls =
-    "w-full rounded-lg bg-[var(--bg)] border border-white/10 px-4 py-3.5 text-white placeholder:text-[var(--text-3)] focus:outline-none focus:border-[var(--teal)] focus:ring-1 focus:ring-[var(--teal)] transition-colors duration-200";
+    "w-full rounded-lg bg-[var(--bg)] border border-[var(--line)] px-4 py-3.5 text-[var(--text)] placeholder:text-[var(--text-3)] focus:outline-none focus:border-[var(--teal)] focus:ring-1 focus:ring-[var(--teal)] transition-colors duration-200";
 
   return (
     <section id="contact" className="relative py-28 md:py-40 bg-[var(--surface)]/30 border-t border-[var(--line)]" data-testid="contact-section">
@@ -57,6 +57,7 @@ export const Contact = () => {
               <div className="space-y-1">
                 {directs.map((d) => (
                   <a
+                  
                     key={d.id}
                     href={d.href}
                     target={d.href.startsWith("http") ? "_blank" : undefined}
@@ -77,7 +78,7 @@ export const Contact = () => {
 
           <div className="lg:col-span-7">
             <Reveal delay={0.1}>
-              <form onSubmit={submit} className="space-y-5 rounded-2xl border border-white/10 bg-[var(--bg)] p-7 md:p-10" data-testid="contact-form">
+              <form onSubmit={submit} className="space-y-5 rounded-2xl border border-[var(--line)] bg-[var(--bg)] p-7 md:p-10" data-testid="contact-form">
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <label className="mono-label mb-2 block">Name</label>

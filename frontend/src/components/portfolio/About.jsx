@@ -10,7 +10,7 @@ export const About = () => (
         <div className="lg:col-span-4">
           <Reveal>
             <div className="lg:sticky lg:top-28">
-              <div className="relative overflow-hidden rounded-2xl border border-white/10">
+              <div className="relative overflow-hidden rounded-2xl border border-[var(--line)]">
                 <img
                   src="/portrait.webp"
                   alt="Dhairya Shah"
@@ -28,7 +28,7 @@ export const About = () => (
                 <div className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 items-start border-b border-[var(--line)] pb-10">
                   <span className="font-mono text-2xl md:text-3xl text-[var(--teal-dim)] pt-1">{c.no}</span>
                   <div>
-                    <h3 className="font-display text-2xl md:text-3xl font-medium text-white tracking-tight mb-3">
+                    <h3 className="font-display text-2xl md:text-3xl font-medium text-[var(--text)] tracking-tight mb-3">
                       {c.title}
                     </h3>
                     <p className="text-[var(--text-2)] leading-relaxed md:text-lg max-w-2xl">{c.body}</p>

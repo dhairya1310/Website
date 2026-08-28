@@ -21,7 +21,7 @@ export const Certifications = () => (
               <div className="flex items-center gap-4 md:gap-6 min-w-0">
                 <BadgeCheck size={22} className="text-[var(--teal)] shrink-0" />
                 <div className="min-w-0">
-                  <h3 className="font-display text-lg md:text-2xl text-white font-medium truncate group-hover:text-[var(--teal)] transition-colors duration-200">
+                  <h3 className="font-display text-lg md:text-2xl text-[var(--text)] font-medium truncate group-hover:text-[var(--teal)] transition-colors duration-200">
                     {c.name}
                   </h3>
                   <p className="mono-label mt-1">{c.issuer}</p>

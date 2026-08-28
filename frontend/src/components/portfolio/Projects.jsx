@@ -17,7 +17,7 @@ export const Projects = () => (
               rel="noreferrer"
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="group block h-full rounded-2xl border border-white/10 bg-[var(--surface)] overflow-hidden hover:border-[var(--teal)]/50 transition-colors duration-300"
+              className="group block h-full rounded-2xl border border-[var(--line)] bg-[var(--surface)] overflow-hidden hover:border-[var(--teal)]/50 transition-colors duration-300"
               data-testid={`project-card-${i}`}
             >
               <div className="relative h-56 overflow-hidden">
@@ -27,12 +27,12 @@ export const Projects = () => (
                   className="h-full w-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[transform,opacity] duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
-                <span className="absolute top-4 right-4 h-9 w-9 grid place-items-center rounded-full bg-black/50 backdrop-blur text-white group-hover:bg-[var(--teal)] group-hover:text-black transition-colors duration-300">
+                <span className="absolute top-4 right-4 h-9 w-9 grid place-items-center rounded-full bg-[var(--bg)]/50 backdrop-blur text-[var(--text)] group-hover:bg-[var(--teal)] group-hover:text-black transition-colors duration-300">
                   <ArrowUpRight size={16} />
                 </span>
               </div>
               <div className="p-7">
-                <h3 className="font-display text-2xl font-medium text-white tracking-tight mb-4">{p.title}</h3>
+                <h3 className="font-display text-2xl font-medium text-[var(--text)] tracking-tight mb-4">{p.title}</h3>
                 <ul className="space-y-2.5 mb-5">
                   {p.points.map((pt, k) => (
                     <li key={k} className="flex gap-3 text-[var(--text-2)] leading-relaxed">

@@ -46,9 +46,9 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 .font-name {
-  font-family: "Bricolage Grotesque", serif;
+  font-family: "Sora", serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
 }
 .font-mono {
   font-family: "IBM Plex Mono", monospace;
@@ -107,7 +107,7 @@ body {
 
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.16);
+  -webkit-text-stroke: 1px var(--line);
 }
 
 @media (prefers-reduced-motion: reduce) {

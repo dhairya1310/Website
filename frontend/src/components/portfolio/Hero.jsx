@@ -49,16 +49,16 @@ export const Hero = () => {
           transition={{ delay: 0.2 }}
           className="flex items-center gap-3 mb-8"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-4 py-1.5">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface)] px-4 py-1.5">
             <MapPin size={13} className="text-[var(--teal)]" />
             <span className="mono-label text-[var(--text-2)]">{PROFILE.location}</span>
           </span>
         </motion.div>
 
-        <h1 className="font-name text-[17vw] sm:text-[13vw] lg:text-[12rem] leading-[0.9] text-white">
+        <h1 className="font-name text-[17vw] sm:text-[13vw] lg:text-[12rem] leading-[0.9] text-[var(--text)]">
           <MaskLine delay={0.35}>{PROFILE.first}</MaskLine>
           <MaskLine delay={0.5}>
-            <span className="text-white">{PROFILE.last}</span>
+            <span className="text-[var(--text)]">{PROFILE.last}</span>
           </MaskLine>
         </h1>
 
@@ -93,10 +93,11 @@ export const Hero = () => {
                 <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
               </button>
               <a
+              
                 href={PROFILE.resume}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm font-mono uppercase tracking-[0.14em] text-white hover:border-[var(--teal)] hover:text-[var(--teal)] transition-colors duration-200"
+                className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] px-7 py-3.5 text-sm font-mono uppercase tracking-[0.14em] text-[var(--text)] hover:border-[var(--teal)] hover:text-[var(--teal)] transition-colors duration-200"
                 data-testid="hero-resume-button"
               >
                 View Resume
