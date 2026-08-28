@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, Sun, Moon } from "lucide-react";
 import { PROFILE } from "@/data/portfolio";
+import { useTheme } from "@/hooks/useTheme";
 
 const LINKS = [
   { id: "about", label: "About" },
@@ -14,6 +15,7 @@ const LINKS = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -35,7 +37,7 @@ export const Navbar = () => {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
           scrolled
-            ? "bg-black/70 backdrop-blur-xl border-b border-white/10"
+            ? "bg-[var(--bg)]/70 backdrop-blur-xl border-b border-white/10"
             : "bg-transparent border-b border-transparent"
         }`}
         data-testid="navbar"
@@ -43,7 +45,7 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
           <button
             onClick={() => go("hero")}
-            className="font-display font-semibold tracking-tight text-lg text-white flex items-center gap-2"
+            className="font-display font-semibold tracking-tight text-lg text-[var(--text)] flex items-center gap-2"
             data-testid="nav-logo"
           >
             <span className="text-[var(--teal)]">/</span>DS
@@ -54,7 +56,7 @@ export const Navbar = () => {
               <button
                 key={l.id}
                 onClick={() => go(l.id)}
-                className="font-mono text-xs uppercase tracking-[0.18em] text-[var(--text-2)] hover:text-white transition-colors duration-200"
+                className="font-mono text-xs uppercase tracking-[0.18em] text-[var(--text-2)] hover:text-[var(--text)] transition-colors duration-200"
                 data-testid={`nav-${l.id}`}
               >
                 {l.label}
@@ -63,6 +65,14 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="text-[var(--text-2)] hover:text-[var(--teal)] transition-colors p-2"
+              aria-label="Toggle theme"
+              data-testid="nav-theme-toggle"
+            >
+              {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+            </button>
             <a
               href={PROFILE.resume}
               target="_blank"
@@ -76,7 +86,7 @@ export const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-[var(--text)] p-2"
             onClick={() => setOpen((v) => !v)}
             data-testid="nav-mobile-toggle"
             aria-label="Menu"
@@ -92,7 +102,7 @@ export const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl md:hidden pt-24 px-8"
+            className="fixed inset-0 z-40 bg-[var(--bg)]/95 backdrop-blur-xl md:hidden pt-24 px-8"
             data-testid="mobile-menu"
           >
             <div className="flex flex-col gap-6">
@@ -103,7 +113,7 @@ export const Navbar = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: i * 0.06 }}
                   onClick={() => go(l.id)}
-                  className="font-display text-3xl text-white text-left"
+                  className="font-display text-3xl text-[var(--text)] text-left"
                   data-testid={`nav-mobile-${l.id}`}
                 >
                   {l.label}
@@ -118,6 +128,17 @@ export const Navbar = () => {
               >
                 View Resume <ArrowUpRight size={16} />
               </a>
+              <button
+                onClick={toggleTheme}
+                className="flex items-center gap-2 text-[var(--text-2)] hover:text-[var(--teal)] transition-colors"
+                aria-label="Toggle theme"
+                data-testid="nav-mobile-theme-toggle"
+              >
+                {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+                <span className="font-mono text-xs uppercase tracking-[0.16em]">
+                  {theme === "dark" ? "Light mode" : "Dark mode"}
+                </span>
+              </button>
             </div>
           </motion.div>
         )}
