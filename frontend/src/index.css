@@ -13,6 +13,17 @@
   --line: rgba(255, 255, 255, 0.08);
 }
 
+.light {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --teal: #0088a3;
+  --teal-dim: #006b80;
+  --text: #0a0a0a;
+  --text-2: #52525b;
+  --text-3: #a1a1aa;
+  --line: rgba(0, 0, 0, 0.08);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,9 +46,9 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 .font-name {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: 500;
+  font-family: "Bricolage Grotesque", serif;
+  font-style: normal;
+  font-weight: 600;
 }
 .font-mono {
   font-family: "IBM Plex Mono", monospace;

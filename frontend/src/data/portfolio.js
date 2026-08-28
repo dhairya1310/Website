@@ -2,10 +2,10 @@ export const PROFILE = {
   name: "Dhairya Shah",
   first: "Dhairya",
   last: "Shah",
-  headline: "Precision Over Assumption",
+  headline: "Data Analyst",
   positioning:
     "Built for the gap between a dataset and a decision.",
-  location: "United States",
+  location: "New York, NY",
   email: "dshah5744@gmail.com",
   phone: "+1 551-362-9992",
   resume: "/Dhairya_Shah_Resume.pdf",
@@ -26,23 +26,23 @@ export const STATS = [
 export const ABOUT = [
   {
     no: "01",
-    title: "Who I Am",
-    body: "I get restless when something is half explained. Not just with work, with anything. Someone tells me half a story and I will ask questions until I have the whole thing, whether or not it was any of my business.",
+    title: "How I Think",
+    body: "I do not trust a number until I know where it came from and what it is measured against. Most bad decisions I have seen were not caused by bad data, they were caused by good data read the wrong way. That is the gap I try to close.",
   },
   {
     no: "02",
-    title: "Mumbai to Hoboken",
-    body: "I studied Information Technology in Mumbai, the kind of degree broad enough that you figure out what you actually like along the way. What I liked was chasing the moment something didn't add up. That instinct followed me to Hoboken, where I did my master's at Stevens and finally had room to chase questions nobody was assigning me.",
+    title: "What I Bring",
+    body: "I move comfortably between the technical side and the business side. I can build the model or the dashboard, and I can also explain in plain terms what it means for revenue, risk, or a decision someone has to make this week.",
   },
   {
     no: "03",
-    title: "How I Actually Work",
-    body: "I would rather spend an extra hour understanding a problem than five minutes guessing at a fix. Most of what I have built started because I did not like the answer \"that is just how it is.\" Some of it turned into something worth showing. Most of it just made me better at the next thing."  
+    title: "How I Work",
+    body: "I ask why before I ask what. If a metric is trending the wrong way, I want the reason, not just the alert. That habit has made me faster at finding real problems instead of chasing noise.",
   },
   {
     no: "04",
-    title: "One More Thing",
-    body: "I will let the work speak for the rest, though I could keep going until this bio turns into a resume with better sentences. If any of it lines up with what you are hiring for, my contact info is a few scrolls away.",
+    title: "What I am looking for",
+    body: " I want to work somewhere data is not just reported but used, where a good analysis changes what happens next. If that sounds like your team, I am one message away.don",
   },
 ];
 
@@ -53,11 +53,11 @@ export const EXPERIENCE = [
     period: "May 2025 — Aug 2025",
     location: "Mumbai, India",
     points: [
-      "Validated field-level integrity across roughly 250K to 300K records in two government data migrations to AWS and Azure, applying anomaly detection to catch irregular patterns before they reached downstream systems.",
-      "Processed 8 to 12K circulars a month across three languages, flagging metadata inconsistencies and 40 to 60 duplicate submissions monthly, cutting manual review by 20 to 30%.",
-      "Built the admin analytics layer surfacing 15 to 20 suspicious access spikes a week, partnering with product and leadership to sustain a 99% uptime SLA.",
+      "Validated integrity across close to 300K records in two government migrations to AWS and Azure, mapping legacy schemas to new models under business and technical rules.",
+      "Processed close to 12K circulars a month across three languages, applying governance rules to catch metadata errors and duplicates, cutting manual review by around 30%.",
+      "Built the admin analytics layer tracking usage and document activity, giving leadership visibility into data quality across the platform.",
     ],
-    metric: "Live",
+
   },
   {
     role: "Data Analyst",
@@ -65,11 +65,11 @@ export const EXPERIENCE = [
     period: "Jan 2024 — Jun 2024",
     location: "Mumbai, India",
     points: [
-      "Built statistical models for sales reporting and short-term revenue forecasts across product categories and store regions.",
-      "Built Power BI dashboards on category sales and promo lift, adopted by merchandising leads for weekly markdown decisions.",
-      "Ran scenario analysis and hypothesis testing on pricing changes, delivering recommendations that lifted category revenue by 8%.",
+      "Built statistical models in Python, SQL, and SAS for sales reporting and short-term revenue forecasts across categories and regions.",
+      "Built Power BI dashboards on category sales and promo lift, used by merchandising leads for weekly markdown decisions.",
+      "Ran scenario analysis on pricing changes, delivering recommendations that lifted category revenue 8%.",
     ],
-    metric: "+8% category revenue",
+    
   },
   {
     role: "Data Analyst",
@@ -77,11 +77,11 @@ export const EXPERIENCE = [
     period: "Jun 2022 — Oct 2023",
     location: "Mumbai, India",
     points: [
-      "Designed and led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session by 15%.",
-      "Automated the weekly reporting pipeline across Postgres, HubSpot, Google Analytics, and Excel, cutting manual prep from 40 hours to under 8.",
-      "Built 12 Tableau dashboards on customer lifecycle and segmentation used in weekly business reviews.",
+      "Led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session 15%.",
+      "Automated the weekly reporting pipeline across Postgres, HubSpot, and Google Analytics, cutting manual prep from 40 hours to under 8..",
+      "Built 12 Tableau dashboards on customer lifecycle and segmentation, used in weekly business reviews.",
     ],
-    metric: "40→8 hrs/wk · +15% rev/session",
+    
   },
 ];
 
