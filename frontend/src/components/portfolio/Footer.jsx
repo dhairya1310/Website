@@ -3,7 +3,7 @@ import { PROFILE } from "@/data/portfolio";
 
 export const Footer = () => (
   <footer className="relative border-t border-[var(--line)] py-14" data-testid="footer">
-    <div className="max-w-[90vw] xl:max-w-[1800px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
       <div>
         <p className="font-display text-2xl text-[var(--text)] tracking-tight">{PROFILE.name}</p>
         <p className="mono-label mt-2">{PROFILE.headline}</p>
