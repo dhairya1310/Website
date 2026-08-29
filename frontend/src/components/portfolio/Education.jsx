@@ -4,7 +4,7 @@ import { EDUCATION } from "@/data/portfolio";
 
 export const Education = () => (
   <section id="education" className="relative py-28 md:py-40" data-testid="education-section">
-    <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
       <SectionHeader index="/ 04" kicker="Education" title="Where the rigor came from." />
 
       <div className="grid md:grid-cols-2 gap-6">

@@ -9,7 +9,7 @@ export const Experience = () => {
 
   return (
     <section id="experience" className="relative py-28 md:py-40 bg-[var(--surface)]/30 border-y border-[var(--line)]" data-testid="experience-section">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
         <SectionHeader index="/ 02" kicker="Experience" title="Roles that moved real numbers." />
 
         <div className="border-t border-[var(--line)]">

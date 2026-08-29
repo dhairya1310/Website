@@ -42,7 +42,7 @@ export const Navbar = () => {
         }`}
         data-testid="navbar"
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
           <button
             onClick={() => go("hero")}
             className="font-display font-semibold tracking-tight text-lg text-[var(--text)] flex items-center gap-2"

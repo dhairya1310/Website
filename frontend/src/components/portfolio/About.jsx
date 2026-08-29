@@ -3,7 +3,7 @@ import { ABOUT } from "@/data/portfolio";
 
 export const About = () => (
   <section id="about" className="relative py-28 md:py-40" data-testid="about-section">
-    <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
       <SectionHeader index="/ 01" kicker="About" title="The narrative behind the numbers." />
 
       <div className="grid lg:grid-cols-12 gap-x-16 gap-y-14">

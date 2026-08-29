@@ -45,7 +45,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="relative py-28 md:py-40 bg-[var(--surface)]/30 border-t border-[var(--line)]" data-testid="contact-section">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--teal)]/40 to-transparent" />
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
         <SectionHeader index="/ 07" kicker="Contact" title="Let's talk about the analyst seat." />
 
         <div className="grid lg:grid-cols-12 gap-x-16 gap-y-14">
