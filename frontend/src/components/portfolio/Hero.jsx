@@ -42,7 +42,7 @@ export const Hero = () => {
         <div className="h-full w-full rounded-full bg-[var(--teal)] opacity-[0.09] blur-[120px]" />
       </motion.div>
 
-      <motion.div style={{ y }} className="relative max-w-[1600px] mx-auto px-6 lg:px-10 w-full">
+      <motion.div style={{ y }} className="relative max-w-[90vw] xl:max-w-[1800px] mx-auto px-6 lg:px-10 w-full">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

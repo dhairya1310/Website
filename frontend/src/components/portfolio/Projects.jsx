@@ -5,7 +5,7 @@ import { PROJECTS } from "@/data/portfolio";
 
 export const Projects = () => (
   <section id="work" className="relative py-28 md:py-40" data-testid="projects-section">
-    <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <div className="max-w-[90vw] xl:max-w-[1800px] mx-auto px-6 lg:px-10">
       <SectionHeader index="/ 03" kicker="Projects & Research" title="Selected work, measured in outcomes." />
 
       <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
