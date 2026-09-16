@@ -42,7 +42,7 @@ export const ABOUT = [
   {
     no: "04",
     title: "What I am looking for",
-    body: " I want to work somewhere data is not just reported but used, where a good analysis changes what happens next. If that sounds like your team, I am one message away.don",
+    body: " I want to work somewhere data is not just reported but used, where a good analysis changes what happens next. If that sounds like your team, I am one message away.",
   },
 ];
 
@@ -78,7 +78,7 @@ export const EXPERIENCE = [
     location: "Mumbai, India",
     points: [
       "Led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session 15%.",
-      "Automated the weekly reporting pipeline across Postgres, HubSpot, and Google Analytics, cutting manual prep from 40 hours to under 8..",
+      "Automated the weekly reporting pipeline across Postgres, HubSpot, and Google Analytics, cutting manual prep from 40 hours to under 8.",
       "Built 12 Tableau dashboards on customer lifecycle and segmentation, used in weekly business reviews.",
     ],
     
