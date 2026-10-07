@@ -47,15 +47,29 @@ export const ABOUT = [
 ];
 
 export const EXPERIENCE = [
+
+{
+    role: "Business Analyst",
+    company: "Street Care",
+    period: "Aug 2026 — Present",
+    location: "Remote, USA",
+    points: [
+      "Defined 6 KPIs with the outreach team to measure service reach and program activity.",
+      "Queried 20K+ outreach records in SQL and Python to spot demand trends and areas with weak coverage.",
+      "Delivered weekly Excel reports to non-technical program leads, reducing one-off data requests by 25%.",
+    ],
+
+  },
+
   {
     role: "Data Operations Analyst",
     company: "Axion24 AI Technologies",
     period: "May 2025 — Aug 2025",
     location: "Mumbai, India",
     points: [
-      "Validated integrity across close to 300K records in two government migrations to AWS and Azure, mapping legacy schemas to new models under business and technical rules.",
-      "Processed close to 12K circulars a month across three languages, applying governance rules to catch metadata errors and duplicates, cutting manual review by around 30%.",
-      "Built the admin analytics layer tracking usage and document activity, giving leadership visibility into data quality across the platform.",
+      "Audited field-level accuracy on roughly 300K records with Python and SQL, lowering downstream data errors by 20%.",
+      "Screened about 12K circulars a month in 3 languages using SQL, Python, and LLM checks, flagging duplicates and metadata issues and reducing manual review by around 30%.",
+      "Created a Power BI admin layer on page visits, downloads, and device usage, giving the board a live view of platform health and data quality.",
     ],
 
   },
@@ -65,9 +79,9 @@ export const EXPERIENCE = [
     period: "Jan 2024 — Jun 2024",
     location: "Mumbai, India",
     points: [
-      "Built statistical models in Python, SQL, and SAS for sales reporting and short-term revenue forecasts across categories and regions.",
-      "Built Power BI dashboards on category sales and promo lift, used by merchandising leads for weekly markdown decisions.",
-      "Ran scenario analysis on pricing changes, delivering recommendations that lifted category revenue 8%.",
+      "Developed Python, SQL, and SAS models with a 6-person team to forecast short-term revenue by product category and store region.",
+      "Delivered Power BI dashboards on promo lift and regional sales that merchandising leads relied on for weekly markdown and reorder calls.",
+      "Tested pricing and promo scenarios with hypothesis testing, shaping recommendations that grew category revenue 8% the next quarter.",
     ],
     
   },
@@ -77,9 +91,9 @@ export const EXPERIENCE = [
     period: "Jun 2022 — Oct 2023",
     location: "Mumbai, India",
     points: [
-      "Led A/B tests on pricing and checkout flow, owning rollout decisions that lifted revenue per session 15%.",
-      "Automated the weekly reporting pipeline across Postgres, HubSpot, and Google Analytics, cutting manual prep from 40 hours to under 8.",
-      "Built 12 Tableau dashboards on customer lifecycle and segmentation, used in weekly business reviews.",
+      "Ran A/B tests on pricing and checkout with product and engineering, driving rollouts that raised revenue per session by 15%.",
+      "Designed the Postgres schema and a Python and SQL pipeline merging HubSpot, Google Analytics, and Excel data, reducing weekly prep from 40 hours to under 8.",
+      "Shipped 12 Tableau dashboards on customer lifecycle and segmentation, speeding up reporting turnaround for product and marketing by 30%.",
     ],
     
   },
@@ -143,23 +157,23 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     group: "Programming",
-    items: ["Python", "SQL", "R", "Excel", "C++", "Jupyter"],
+    items: ["Python", "SQL", "R", "SAS", "C++", "Jupyter", "Javascript"],
   },
   {
     group: "Analytics",
-    items: ["A/B Testing", "Segmentation", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Fraud & Risk Analysis"],
+    items: ["A/B Testing", "Segmentation & Cohort Analysis", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Data Governance", "KPI Design"],
   },
   {
-    group: "Software",
-    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git", "ETL", "SAS"],
+    group: "Data & Cloud",
+    items: ["Snowflake", "AWS", "Azure", "Databricks", "Git", "ETL", "Data Modeling"],
   },
   {
     group: "BI / Viz",
-    items: ["Tableau", "Power BI", "Looker", "Excel Dashboards"],
+    items: ["Tableau", "Power BI", "Looker", "Excel", "Google Analytics"],
   },
   {
     group: "ML/Modeling",
-    items: ["PyTorch", "Stable-Baselines3", "Gymnasium", "Scikit-learn", "Time Series Forecasting", "Logistic Regression"],
+    items: ["PyTorch", "Decision Trees", "Random Forest" "LSTM", "Scikit-learn", "Time Series Forecasting", "Linear & Logistic Regression"],
   },
 ];
 
