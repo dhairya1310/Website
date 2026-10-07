@@ -173,7 +173,7 @@ export const SKILLS = [
   },
   {
     group: "ML/Modeling",
-    items: ["PyTorch", "Decision Trees", "Random Forest" "LSTM", "Scikit-learn", "Time Series Forecasting", "Linear & Logistic Regression"],
+    items: ["PyTorch", "Decision Trees", "Random Forest", "LSTM", "Scikit-learn", "Time Series Forecasting", "Linear & Logistic Regression"],
   },
 ];
 
