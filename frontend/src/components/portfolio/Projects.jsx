@@ -24,7 +24,7 @@ export const Projects = () => (
                 <img
                   src={p.image}
                   alt={p.title}
-                  className="h-full w-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[transform,opacity] duration-700"
+                  className="h-full w-full object-cover object-top origin-top opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-[transform,opacity] duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
                 <span className="absolute top-4 right-4 h-9 w-9 grid place-items-center rounded-full bg-[var(--bg)]/50 backdrop-blur text-[var(--text)] group-hover:bg-[var(--teal)] group-hover:text-black transition-colors duration-300">

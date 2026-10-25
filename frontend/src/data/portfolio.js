@@ -167,13 +167,13 @@ export const PROJECTS = [
   },
   {
     tag: "Quantitative Analysis",
-    title: "Options Pricing Lab: Live Pricing and Volatility Surfaces",
+    title: "Options Pricing and Volatility Surface Lab",
     points: [
-      "Priced 8,568 options daily across 5 tickers with Black-Scholes, binomial and Monte Carlo models built from scratch.",
+      "Priced 8,568 options daily across 5 tickers with Black\u2011Scholes, binomial and Monte Carlo models built from scratch.",
       "Showed Black-Scholes underprices crash protection by up to 100% while the tree cut pricing error by 87%.",
       "Tested 2,471 put-call parity pairs for arbitrage and automated daily updates on a live Streamlit app.",
     ],
-    stack: ["Python", "Monte Carlo", "Streamlit"],
+    stack: ["Python", "Monte Carlo", "Streamlit", "GitHub Actions"],
     metric: "Isolation Forest · DBSCAN",
     image: "/images/options-dashboard.png",
     link: "https://options-pricing-lab.streamlit.app/",
