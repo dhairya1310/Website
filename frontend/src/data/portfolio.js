@@ -162,7 +162,7 @@ export const PROJECTS = [
     ],
     stack: ["Python", "SQL", "DuckDB", "Tableau"],
     metric: "Isolation Forest · DBSCAN",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    image: "/images/bank-dashboard.png",
     link: "https://github.com/dhairya1310/bank-stress-early-warning",
   },
   {
