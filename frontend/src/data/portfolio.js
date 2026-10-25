@@ -12,7 +12,7 @@ export const PROFILE = {
   links: {
     linkedin: "https://www.linkedin.com/in/dhairya-shah-b00b111b6/",
     github: "https://github.com/dhairya1310",
-    tableau: "https://public.tableau.com/app/profile/dhairya1310",
+    tableau: "https://public.tableau.com/app/profile/dhairya.shah6508/vizzes",
   },
 };
 
@@ -152,6 +152,32 @@ export const PROJECTS = [
     image: "https://images.unsplash.com/photo-1704244003064-6d4e55ddd733",
     link: "https://github.com/dhairya1310/Airbnb-Anomaly-Detection",
   },
+  {
+    tag: "Warning System",
+    title: "Early Warning System for US Bank Failures",
+    points: [
+      "Screened 987 US banks over $1B for SVB-style risk using 128K bank-quarters of FFIEC data.",
+      "Backtested on 2022 data and ranked all 4 large bank failures since 2023 in the top 12%.",
+      "Modeled a +100bp rate shock and shipped a Tableau dashboard and risk committee memo.",
+    ],
+    stack: ["Python", "SQL", "DuckDB", "Tableau"],
+    metric: "Isolation Forest · DBSCAN",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    link: "https://github.com/dhairya1310/bank-stress-early-warning",
+  },
+  {
+    tag: "Quantitative Analysis",
+    title: "Options Pricing Lab: Live Pricing and Volatility Surfaces",
+    points: [
+      "Priced 8,568 options daily across 5 tickers with Black-Scholes, binomial and Monte Carlo models built from scratch.",
+      "Showed Black-Scholes underprices crash protection by up to 100% while the tree cut pricing error by 87%.",
+      "Tested 2,471 put-call parity pairs for arbitrage and automated daily updates on a live Streamlit app.",
+    ],
+    stack: ["Python", "Monte Carlo", "Streamlit"],
+    metric: "Isolation Forest · DBSCAN",
+    image: "/images/options-dashboard.png",
+    link: "https://options-pricing-lab.streamlit.app/",
+  },
 ];
 
 export const SKILLS = [
@@ -160,7 +186,7 @@ export const SKILLS = [
     items: ["Python", "SQL", "R", "SAS", "C++", "Jupyter", "Javascript"],
   },
   {
-    group: "Analytics",
+    group: "M",
     items: ["A/B Testing", "Segmentation & Cohort Analysis", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Data Governance", "KPI Design"],
   },
   {
@@ -169,7 +195,7 @@ export const SKILLS = [
   },
   {
     group: "BI / Viz",
-    items: ["Tableau", "Power BI", "Looker", "Excel", "Google Analytics"],
+    items: ["Tableau", "Power BI", "Looker", "Excel", "Google Analytics", "Streamlit"],
   },
   {
     group: "ML/Modeling",
