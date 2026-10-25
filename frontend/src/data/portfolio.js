@@ -169,7 +169,7 @@ export const PROJECTS = [
     tag: "Quantitative Analysis",
     title: "Options Pricing and Volatility Surface Lab",
     points: [
-      "Priced 8,568 options daily across 5 tickers with Black\u2011Scholes, binomial and Monte Carlo models built from scratch.",
+      "Built Black\u2011Scholes, binomial and Monte Carlo models from scratch to price 8,568 options daily.",,
       "Showed Black-Scholes underprices crash protection by up to 100% while the tree cut pricing error by 87%.",
       "Tested 2,471 put-call parity pairs for arbitrage and automated daily updates on a live Streamlit app.",
     ],
