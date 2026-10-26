@@ -117,8 +117,8 @@ export const PROJECTS = [
     tag: "Research · Published",
     title: "Forecasting Micro/Macro Economic Indicators",
     points: [
-      "Built an LSTM and classical ML ensemble to forecast key economic indicators.",
-      "Hit around 95% R2 on data the models had never seen before.",
+      "Built and compared LSTM and classical ML models to forecast economic indicators.",
+      "Tested stationarity with ADF and ACF/PACF across 227 countries and 5 years of market data.",
       "Published the work at the Hinweis International Conference ASIT 2024.",
     ],
     stack: ["LSTM", "Python", "Time Series"],
@@ -183,10 +183,10 @@ export const PROJECTS = [
 export const SKILLS = [
   {
     group: "Programming",
-    items: ["Python", "SQL", "R", "SAS", "C++", "Jupyter", "Javascript"],
+    items: ["Python", "SQL", "R", "SAS", "C++", "Jupyter", "JavaScript"],
   },
   {
-    group: "M",
+    group: "Analytics",
     items: ["A/B Testing", "Segmentation & Cohort Analysis", "Hypothesis Testing", "Anomaly & Pattern Detection", "Statistical Modeling", "Data Governance", "KPI Design"],
   },
   {
